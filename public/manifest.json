@@ -1,7 +1,7 @@
 {
-  "name": "Notebook",
-  "short_name": "Notebook",
-  "start_url": "/NotebookVue/",
+  "name": "testTodo",
+  "short_name": "testTodo",
+  "start_url": "/test-todo/",
   "display": "standalone",
   "description": "A simple notebook",
   "theme_color": "#000000",
@@ -52,5 +52,5 @@
       "form_factor": "narrow"
     }
   ],
-  "id": "/NotebookVue/"
+  "id": "/test-todo/"
 }

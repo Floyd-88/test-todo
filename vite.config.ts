@@ -6,7 +6,7 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/NotebookVue/",
+  base: "/test-todo/",
   plugins: [
     vue(),
     VitePWA({
@@ -14,8 +14,8 @@ export default defineConfig({
       injectRegister: 'script',
       includeAssets: ['favicon.ico', 'robots.txt'],
       manifest: {
-        name: 'Notebook',
-        short_name: 'Notebook',
+        name: 'testTodo',
+        short_name: 'testTodo',
         description: 'A simple notebook app',
         theme_color: '#000000',
         icons: [
@@ -50,6 +50,9 @@ export default defineConfig({
             type: 'image/png'
           }
         ],
+      },
+      workbox: {
+        globPatterns: ['**/*.{js,ts,css,html,ico,png}'],
       },
     }),
   ],
